@@ -1,0 +1,64 @@
+package com.example;
+
+        import com.jfoenix.controls.JFXButton;
+        import com.jfoenix.controls.JFXRadioButton;
+        import com.jfoenix.controls.JFXTextField;
+        import javafx.event.ActionEvent;
+        import javafx.fxml.FXML;
+        import javafx.fxml.Initializable;
+        import javafx.scene.control.Label;
+
+        import java.net.URL;
+        import java.util.ResourceBundle;
+
+        public class AddProductPartInterfaceController implements Initializable {
+
+        @FXML private JFXRadioButton inHouseButton;
+        @FXML private JFXRadioButton outsourcedButton;
+        @FXML private JFXTextField partIDTextField;
+        @FXML private JFXTextField partNameTextField;
+        @FXML private JFXTextField partLnvField;
+        @FXML private JFXTextField partPriceField;
+        @FXML private JFXTextField partMaxField;
+        @FXML private JFXTextField partMinField;
+        @FXML private JFXTextField partMachineIDField;
+        @FXML private JFXTextField partCompanyNameField;
+        @FXML private Label partCompanyNameLabel;
+        @FXML private Label partMachineIDLabel;
+        @FXML private JFXButton partSaveButton;
+
+        @Override
+        public void initialize(URL url, ResourceBundle rb) {
+        // Initialization code here, if needed
+        }
+
+        @FXML
+        void inHouseButtonAction(ActionEvent event) {
+        // Handle inHouseButton action
+        partMachineIDLabel.setText("Machine ID");
+        partMachineIDField.setPromptText("Machine ID");
+        partCompanyNameField.setVisible(false);
+        partCompanyNameLabel.setVisible(false);
+        }
+
+        @FXML
+        void outsourceButtonPress(ActionEvent event) {
+        // Handle outsourcedButton action
+        partMachineIDLabel.setText("Company Name");
+        partMachineIDField.setPromptText("Company Name");
+        partCompanyNameField.setVisible(true);
+        partCompanyNameLabel.setVisible(true);
+        }
+
+        @FXML
+        void partSaveButtonAction(ActionEvent event) {
+        // Handle partSaveButton action
+        // Your save button logic here
+        }
+
+        @FXML
+        void closeButtonAction(ActionEvent event) {
+        // Handle closeButton action
+        // Your close button logic here
+        }
+        }

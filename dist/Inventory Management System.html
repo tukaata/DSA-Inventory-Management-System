@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <SCRIPT src="https://www.java.com/js/deployJava.js"></SCRIPT>
+</head>
+<body>
+<h2>Test page for <b>Inventory Management System</b></h2>
+<b>Webstart:</b> <a href="#" onclick="launchApplication()">click to launch this app as webstart</a><br><hr><br>
+
+<!-- JavaFX Applet will be inserted here -->
+<div id="javafx-app-placeholder"></div>
+
+<script>
+    function launchApplication() {
+        var attributes = { codebase: 'https://www.java.com/download/',
+            code: 'javafx.embed.swing.JFXPanel',
+            width: 800,
+            height: 600
+        };
+        var parameters = {jnlp_href: 'Inventory Management System.jnlp'};
+        deployJava.runApplet(attributes, parameters, '1.8');
+    }
+</script>
+</body>
+</html>
+ME

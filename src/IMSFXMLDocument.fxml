@@ -1,0 +1,82 @@
+import com.jfoenix.controls.JFXButton;
+        import com.jfoenix.controls.JFXTextField;
+        import javafx.event.ActionEvent;
+        import javafx.fxml.FXML;
+        import javafx.fxml.Initializable;
+        import javafx.scene.control.Label;
+        import javafx.scene.control.TableColumn;
+        import javafx.scene.control.TableView;
+        import javafx.scene.layout.AnchorPane;
+
+        import java.net.URL;
+        import java.util.ResourceBundle;
+
+        public class IMSFXMLDocumentController implements Initializable {
+
+        @FXML private Label label;
+        @FXML private Label label1;
+        @FXML private JFXButton addPartsButton;
+        @FXML private JFXTextField partsFilterString;
+        @FXML private JFXButton deletePartsButton;
+        @FXML private JFXButton partsModifyButton;
+        @FXML private TableView<Part> partsTable;
+    @FXML private TableColumn<Part, Integer> partsID;
+    @FXML private TableColumn<Part, String> partsName;
+    @FXML private TableColumn<Part, Integer> partsLevel;
+    @FXML private TableColumn<Part, Double> partsCost;
+
+    @FXML private JFXTextField productFilterString;
+    @FXML private JFXButton deleteProductButton;
+    @FXML private JFXButton productModifyButton;
+    @FXML private JFXButton addProductButton;
+    @FXML private TableView<Product> productTable;
+        @FXML private TableColumn<Product, Integer> productID;
+        @FXML private TableColumn<Product, String> productName;
+        @FXML private TableColumn<Product, Integer> productLevel;
+        @FXML private TableColumn<Product, Double> productCost;
+
+        @FXML
+        void partAddButtonAction(ActionEvent event) {
+        // Your add parts button logic here
+        }
+
+        @FXML
+        void deletePartsAction(ActionEvent event) {
+        // Your delete parts button logic here
+        }
+
+        @FXML
+        void partsModifyButtonAction(ActionEvent event) {
+        // Your modify parts button logic here
+        }
+
+        @FXML
+        void partsSearchButtonAction(ActionEvent event) {
+        // Your parts search button logic here
+        }
+
+        @FXML
+        void productAddButtonAction(ActionEvent event) {
+        // Your add product button logic here
+        }
+
+        @FXML
+        void deleteProductSelected(ActionEvent event) {
+        // Your delete product button logic here
+        }
+
+        @FXML
+        void productModifyButtonAction(ActionEvent event) {
+        // Your modify product button logic here
+        }
+
+        @FXML
+        void productSearchButtonAction(ActionEvent event) {
+        // Your product search button logic here
+        }
+
+        @Override
+        public void initialize(URL url, ResourceBundle rb) {
+        // TODO: Initialize logic for the controller
+        }
+        }

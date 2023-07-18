@@ -1,0 +1,104 @@
+import com.jfoenix.controls.*;
+        import javafx.fxml.FXML;
+        import javafx.scene.control.Label;
+        import javafx.scene.control.TableColumn;
+        import javafx.scene.control.TableView;
+        import javafx.scene.layout.AnchorPane;
+
+        public class AddProductInterfaceController {
+        @FXML
+        private AnchorPane anchorPane;
+        @FXML
+        private Label titleLabel;
+        @FXML
+        private JFXTextField productIDTextField;
+        @FXML
+        private JFXTextField productNameTextField;
+        @FXML
+        private JFXTextField productLnvField;
+        @FXML
+        private JFXTextField productPriceField;
+        @FXML
+        private JFXTextField productMaxField;
+        @FXML
+        private JFXTextField productMinField;
+        @FXML
+        private Label idLabel;
+        @FXML
+        private Label nameLabel;
+        @FXML
+        private Label lnvLabel;
+        @FXML
+        private Label maxLabel;
+        @FXML
+        private Label minLabel;
+        @FXML
+        private JFXButton saveButton;
+        @FXML
+        private JFXButton cancelButton;
+        @FXML
+        private Label priceLabel;
+        @FXML
+        private TableView partsTable1;
+        @FXML
+        private TableColumn partsID1;
+        @FXML
+        private TableColumn partsName1;
+        @FXML
+        private TableColumn partsLevel1;
+        @FXML
+        private TableColumn partsCost1;
+        @FXML
+        private JFXButton addButton;
+        @FXML
+        private TableView partsTable;
+        @FXML
+        private TableColumn partsID;
+        @FXML
+        private TableColumn partsName;
+        @FXML
+        private TableColumn partsLevel;
+        @FXML
+        private TableColumn partsCost;
+        @FXML
+        private JFXButton deleteButton;
+        @FXML
+        private JFXButton deAssociateButton;
+        @FXML
+        private JFXButton editButton;
+
+        @FXML
+        public void initialize() {
+        // Here you can initialize your UI components and set event handlers if needed.
+        }
+
+        @FXML
+        public void productSaveButtonAction() {
+        // Implement the functionality for the Save button.
+        }
+
+        @FXML
+        public void closeButtonAction() {
+        // Implement the functionality for the Cancel button.
+        }
+
+        @FXML
+        public void addProductAssociatedPart() {
+        // Implement the functionality for the Add button associated with partsTable1.
+        }
+
+        @FXML
+        public void productPartDeleteAction() {
+        // Implement the functionality for the Delete button associated with partsTable.
+        }
+
+        @FXML
+        public void productPartDeAssociateAction() {
+        // Implement the functionality for the De-Associate button.
+        }
+
+        @FXML
+        public void productPartEditAction() {
+        // Implement the functionality for the Edit button.
+        }
+        }
